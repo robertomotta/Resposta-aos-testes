@@ -1,0 +1,4 @@
+SELECT * FROM CustomerAddress;
+DELETE FROM CustomerAddress WHERE IdCustomer = (SELECT IdCustomer FROM Customer WHERE CpfCnpj =
+88877766655);
+DELETE FROM Customer WHERE CpfCnpj = 88877766655;
